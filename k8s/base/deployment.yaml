@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudgraft-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloudgraft-demo
+  template:
+    metadata:
+      labels:
+        app: cloudgraft-demo
+    spec:
+      containers:
+      - name: app
+        image: ttl.sh/cloudgraft-demo:latest
+        ports:
+        - containerPort: 3000
