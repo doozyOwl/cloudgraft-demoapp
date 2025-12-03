@@ -1,0 +1,9 @@
+{
+  "name": "cloudgraft-demo-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js demo app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
